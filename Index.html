@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<?php
+$czas = date("Y-m-d G:i:s");
+setcookie("wizyta", $czas, time()+3600, "/", "localhost", 0);
+?>
+<html>
+
+<html lang="pl-PL">
+<meta charset ="UTF-8"/>
+<head>
+<link rel="stylesheet" type="text/css" href="arkusz.css">
+<script type='text/javascript'>!function(e,t,n,a,r){var l=e.Startquestion=e.Startquestion||{};if(l.invoked){e.console&&console.warn&&console.warn("Startquestion snippet included twice.");return}l.invoked=!0,l.queue=[],l.call=function(){l.queue.push(Array.prototype.slice.call(arguments))};var s=t.createElement("script");s.type="text/javascript",s.async=!0,s.src=n;var p=t.getElementsByTagName("script")[0];p.parentNode.insertBefore(s,p),l.call({type:"load",config:{key:a,api:r}})}(window,document,'https://files.startquestion.com/dist/widget/embeddable.js','aa10a803-bc35-4dc0-92df-0efae838ec83','https://app.startquestion.com');</script>
+<title>
+<h1><b>Strona o mnie</b></h1><br>
+<title>Odwiedziny</title>
+<title>Obramowanie tabel</title>
+
+<style>
+.menu li : first-of-type {display: inline;}
+table, tr, td {
+border: 3px solid green;
+border-collapse: collapse;
+table-layout: auto;
+}
+th {
+border: 3px solid green;
+border-collapse: collapse;
+}
+body {background-color: #DFDFDF; url(zachody słońca.jpg); no-repeat; 100% ; 100% ;}
+p {font-size: 20pt; color:green;}
+h1 {style="font-size: 20pt; color: blue;"}
+<!--body {background-image : url(zachody słońca.jpg);}-->
+
+<p > <b>To są moje zainteresowania i hobby:<br></b></p>
+
+</style>
+</title>
+
+<body >
+<!--h3>Zmiana wyglądu bloku</h3>
+<p>Ustaw kursor myszy nad elementem</p>
+<div></div>-->
+
+<?php
+if (isset($_COOKIE['wizyta'])) 
+{
+$ostatnia = $_COOKIE['wizyta'];
+echo "Witamy ponownie! <br> Ostatni raz odwiedziłeś nas: " . $ostatnia;
+} 
+else 
+{
+echo "Witamy na naszej stronie!";
+}
+?><br>
+<a href="./fotki i klipy/Top animowany na stronę.gif"><img src="obraz.png" width="2048" height="120" alt="animacja"></a>
+<p style="font-size: 30pt; text-decoration: blink; text-align: center; color: teal;">>><strong> Witam i zapraszam do odwiedzenia mojej strony!<<</strong></p>
+<a id="Powrót"> </a>
+<div>
+<ul class="menu">
+<li><a href="#Powrót">Start</a></li> 
+<li><a href="index.html ">O mnie</a></li>
+<li><a href="Info zawodowe.html">Info zawodowe</a></li>
+<li><a href="Pasje.html">Pasje </a></li>
+<li><a href="Galeria.html">Galeria</a></li>
+<li><a href="Klipy video.html">Klipy video</a></li>
+<li><a href="#mailto:">Kontakt</a></li>
+<hr>
+</ul>
+</head>
+<img src="./fotki i klipy/Moje foto 300x300_2.png" alt ="Zdjęcie Mirosława Bukowskiego" style="float: left; border: slid thick red; width="265" hight="265"/>
+<h1 style ="text-align: left;  line-height: 85%; font-size: 25pt; text-decoration: underline; color: navy;"><b>Nazywam się Bukowski Mirosław.<br>Jestem nauczycielem przedmiotów zawodowych w ZSEIT w Olsztynie</b></h1>
+<a href="https://zseit.olsztyn.eu/"><i> <b> To jest link do strony internetowej naszej szkoły </b></i></a>
+<p style="font-size: 20pt; color: #e450dd; line-height: 20%; text-decoration: underline;"> <b>To są moje zainteresowania i hobby:</b></p>
+<ul>
+<li>Nowoczesne technologie</li>
+<li>Polityka</li>
+<li>Gospodarka i finanse</li>
+<li>Geografia</li>
+<li>Historia starożytna</li>
+<li>Sport szybowcowy i inne</li>
+</ul>
+</div>
+<p style="font-size: 20pt; vertical-align: top;line-height: 50%; color: navy;"> <b>Więcej szczegółowych informacji o mnie, znajdziesz w poszczególnych zakładkach powyższego menu.</b></p>
+<p><a href="#mailto: "> Tu znajdziesz mój adres mailowy:</a></p>
+<!--p style="font-size: 20pt; color: blue;"> <b>Nazywam się Bukowski Mirosław<br>Jestem nauczycielem przedmiotów zawodowych w ZSEIT w Olsztynie</b></p>-->
+<!--p> <i>Poniżej znajduje się galeria moich zdjęć:</i></p>
+<figure>
+ <!--position="center"/>
+<img src="./fotki i klipy/My photo.jpg" alt ="Foto Mirosława Bukowskiego" width="340" hight="500"/> <!--position="center"/>
+<img src="./fotki i klipy/LGEMA_TDR Team4_1.png" alt ="TDR FI-6" width="453" hight="150"/><br><br>
+<img src="./fotki i klipy/Mirek w szybowcu Puchacz.png" alt ="Mirek w szybowcu" />
+<img src="./fotki i klipy/Mirek w szybowcu Puchacz_1.png" alt ="Mirek w szybowcu_1" />
+<img src="./fotki i klipy/Mirek z szybowcem Puchacz.png" alt ="Mirek z szybowcem" />
+<img src="./fotki i klipy/Mirek na Helu.png" alt ="Mirek na Helu" />
+<img src="./fotki i klipy/Mirek na Helu_1.png" alt ="Mirek na Helu" />
+<img src="./fotki i klipy/Mirek na Helu_2.png" alt ="Mirek na Helu" />
+<figcaption>Oto galeria moich zdjęć</figcaption>
+</figure>
+<hr>
+<!--p><i>Poniżej kilka klipów wideo z moich lotów:</i></p>
+<figure>
+<video height="500" width="530" controls>
+<!--source src="./fotki i klipy/Start Puchacza_hol za samolotem.webm" type="video/webm">
+<!--source src="./fotki i klipy/Start Puchacza_hol za samolotem.mp4" type="video/mp4">-->
+<!--source src="./fotki i klipy/Puchacz_ładny start za samolotem.webm" type="video/webm">-->
+<!--source src="./fotki i klipy/Puchacz lot termiczny.webm" type="video/webm">-->
+<!--source src="./fotki i klipy/Puchacz_manewry  przed lądowaniem i lądowanie.webm" type="video/webm">
+</video>
+<!--video height="1000" width="1024" controls>
+<source src="./fotki i klipy/Puchacz_ładny start za samolotem.webm" type="video/webm">
+Ten typ video nie jest obsługiwany!
+</video>
+<video height="500" width="530" controls>
+<!--source src="./fotki i klipy/Puchacz lot termiczny.webm" type="video/webm">
+<!--<source src="C:/Users/DELL/Documents/Nowe/Moja WWW/fotki i klipy/Start Puchacza_hol za samolotem.mp4" type="video/mp4">
+Ten typ video nie jest obsługiwany!
+</video>
+<!--video height="500" width="530" controls>-->
+<!--<source src="C:/Users/DELL/Documents/Nowe/Moja WWW/fotki i klipy/Puchacz_start za wyciągarką i lądowanie.webm" type="video/webm">-->
+<!--source src="./fotki i klipy/Start Puchacza_hol za samolotem.mp4" type="video/mp4">-->
+<!--embed src="./fotki i klipy/Puchacz_manewry  przed lądowaniem i lądowanie.webm" width="530" height="400">
+<embed src="./fotki i klipy/Puchacz_ładny start za samolotem.webm" width="530" height="400"><br>
+</video><br>
+</figure>
+<a href="./fotki i klipy/Puchacz_manewry  przed lądowaniem i lądowanie.webm"><img src="obraz.png" width="530" height="530" alt="wyświetli film"></a>-->
+<hr>
+<form action="http://localhost/skrypt_form.php" method="post">
+<section>
+<h1>Formularz rejestracyjny:</h1>
+<table>
+<tr>
+<td>Podaj swoje nazwisko:</td>
+<td><input type="text" name="nazw" value="" size="30"></td>
+</tr>
+<tr>
+<td>Podaj swoje imię:</td>
+<td><input type="text" name="im" value="" size="30"></td>
+</tr>
+</table>
+<p>Wybierz płeć:<br></p>
+<input type="radio" value="kobieta" name="plec">Kobieta
+<input type="radio" value="mężczyzna" name="plec">Mężczyzna
+<p>Podaj wiek:</p>
+<input list="wiek" name="wiek">
+<datalist id="wiek">
+<option value="16-24">
+<option value="25-39">
+<option value="40-60">
+<option value="powyżej 60">
+</datalist>
+<p>Podaj adres e-mail:</p>
+<input type="email" name="adr" value="" size="30">
+<p>Wybierz wykształcenie:</p>
+<input type="radio" value="podstawowe" name="wykszt">Podstawowe<br>
+<input type="radio" value="średnie" name="wykszt">Średnie<br>
+<input type="radio" value="wyższe" name="wykszt">Wyższe
+<p>Wybierz języki:</p>
+<select name="języki" size="6" multiple>
+<option value="Język angielski">Język angielski</option>
+<option value="Język niemiecki">Język niemiecki</option>
+<option value="Język francuski">Język francuski</option>
+<option value="Język włoski">Język włoski</option>
+<option value="Język rosyjski">Język rosyjski</option>
+<option value="Język hiszpański">Język hiszpański</option>
+</select>
+<p>Wybierz zainteresowania:</p>
+<input type="checkbox" name="hobby" value="moto">Motoryzacja<br>
+<input type="checkbox" name="hobby" value="sport">Sport<br>
+<input type="checkbox" name="hobby" value="muza">Muzyka<br>
+<input type="checkbox" name="hobby" value="tan">Taniec<br>
+<input type="checkbox" name="hobby" value="gry">Gry komputerowe<br>
+<input type="checkbox" name="hobby" value="inna">Inne (podaj jakie):
+<input name="hobby">
+<p text-decoration: blink ;> Tu wpisz swoje uwagi:</p>
+<textarea name="uwagi" cols="37" rows="7"></textarea>
+<p><input type="checkbox" name="opcje"> Zgadzam się na przetwarzanie moich
+danych osobowych</p>
+<p>
+<input type="submit" value="Wyślij" name="wyslij">
+<input type="reset" value="Wyczyść" name="zeruj">
+</p>
+</form>
+</section>
+<hr>
+<div>
+<footer id="stopka_s">
+<p><i>mailto: miroslawb@onet.eu</i></p>
+<a href="mailto:miroslawb@onet.eu">Tu możesz wysłać maila.</a>
+<a id="mailto:"> </a>
+<p> Tel.:+48 535251275</p>
+<p>Autor: Mirosław Bukowski</p>
+</div>
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-37d603c8-a9e9-4cbe-93a2-c96cc0ca78ad" data-elfsight-app-lazy></div>
+<p><strong>Uwaga:</strong> Może być potrzebne odświeżenie strony!</p>
+<a href="#Powrót">Kliknij aby przewinąć do góry</a>.
+</footer>
+
+</body>
+</html>

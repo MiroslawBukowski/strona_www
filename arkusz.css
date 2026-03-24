@@ -1,0 +1,97 @@
+<style>
+h1 {color: teal; text-align: left; font-size: 25pt; text-decoration: underline; }
+p {font-size: 20pt; color:red; text-decoration: blink;vertical-align: top;}
+
+body {background-image : url(zachody słońca.jpg);}
+<!--body {background-image : url(zachody słońca.jpg);}-->
+<!--div {-->
+<!--width: 530px;-->
+<!--height: 50px;-->
+
+background-color: #bdd1dc;
+99ffff ; 
+#008080;
+transition-duration: 2s;
+ul {font-size: 20pt; color:#e450dd; font-weight:bold;}
+}
+ul, ul li {
+
+display: block;
+list-style: hole;
+margin: 0;
+padding: 0;
+}
+ul li {
+display: block;
+white-space: nowrap;
+}
+ul a:link, ul a:visited {
+text-decoration: underline;
+background-color: #c0c0c0;
+color: #1f8dac;
+padding: 4px;
+border: 2px outset #c0c0c0;
+}
+ul a:hover {
+border-style: inset;
+color: #50bfe4;
+padding: 6px 3px 3px 6px;
+}
+
+div:hover {
+width: 100%;
+background-color: #bdd1dc;
+
+99ffff;
+<!--#008080; light-blue;-->
+<!--f0c0c0;-->
+}-->
+.menu {
+padding: 10px;
+margin: 0 0 10px 0;
+position: relative;
+}
+
+.menu li {
+	li {display: inline;}
+display: inline;
+font-size: 50px;
+display: inline;
+}
+.menu li a {
+	li {display: inline;}
+display: inline;
+display: inline;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+
+transition: all 0.2s ease-in-out;
+}
+.menu li a:hover {
+color:teal;
+ #ccffff;
+padding-left: 10px;
+}
+
+.menu li : first-of-type {display: inline;}
+
+table, tr, td {
+border: 3px solid green;
+border-collapse: collapse;
+table-layout: auto;
+}
+th {
+border: 3px solid green;
+border-collapse: collapse;
+}
+table {caption-side: bottom;}
+body {background-color: #DFDFDF; url(zachody słońca.jpg); no-repeat; 100% ; 100% ;}
+p {font-size: 20pt; color:green;}
+h1 {style="font-size: 20pt; color: blue;"}
+<!--body {background-image : url(zachody słońca.jpg);}-->
+
+<p > <b>To są moje zainteresowania i hobby:<br></b></p>
+
+</style>
